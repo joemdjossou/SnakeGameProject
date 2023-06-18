@@ -19,10 +19,10 @@ window.onload = function(){
         var canvas = document.createElement('canvas');
         canvas.width = canvasWidth;
         canvas.height = canvasHeight;
-        canvas.style.border = "30px solid gray";
+        canvas.style.border = "30px solid green";
         canvas.style.margin = "50px auto";
         canvas.style.display = "block";
-        canvas.style.backgroundColor = "#ddd";
+        canvas.style.backgroundColor = "#99cc4b";
         document.body.appendChild(canvas);
         ctx = canvas.getContext('2d');
         snakee = new Snake([[6,4],[5,4],[4,4],[3,4],[2,4]],"right");
@@ -57,12 +57,12 @@ window.onload = function(){
     }
     
     function speedUp(){
-        delay /= 2;
+        delay /= 1.3;
     }
     
     function gameOver(){
         ctx.save();
-        ctx.font = "bold 70px sans-serif";
+        ctx.font = "bold 70px poppins";
         ctx.fillStyle = "#000";
         ctx.textAlign = "center";
         ctx.textBaseline = "middle";
@@ -73,8 +73,8 @@ window.onload = function(){
         ctx.strokeText("Game Over", centreX, centreY - 180);
         ctx.fillText("Game Over", centreX, centreY - 180);
         ctx.font = "bold 30px sans-serif";
-        ctx.strokeText("Appuyer sur la touche Espace pour rejouer", centreX, centreY - 120);
-        ctx.fillText("Appuyer sur la touche Espace pour rejouer", centreX, centreY - 120);
+        ctx.strokeText("Press the Space button to replay", centreX, centreY - 120);
+        ctx.fillText("Press the Space button to replay", centreX, centreY - 120);
         ctx.restore();
     }
     
@@ -90,7 +90,7 @@ window.onload = function(){
     function drawScore(){
         ctx.save();
         ctx.font = "bold 200px sans-serif";
-        ctx.fillStyle = "gray";
+        ctx.fillStyle = "#cccfc8";
         ctx.textAlign = "center";
         ctx.textBaseline = "middle";
         var centreX = canvasWidth / 2;
@@ -112,7 +112,7 @@ window.onload = function(){
         
         this.draw = function(){
             ctx.save();
-            ctx.fillStyle="#ff0000";
+            ctx.fillStyle="#033dff";
             for (var i=0 ; i < this.body.length ; i++){
                 drawBlock(ctx,this.body[i]);
             }
@@ -203,7 +203,7 @@ window.onload = function(){
         
         this.draw = function(){
           ctx.save();
-          ctx.fillStyle = "#33cc33";
+          ctx.fillStyle = "#fc0519";
           ctx.beginPath();
           var radius = blockSize/2;
           var x = this.position[0]*blockSize + radius;
