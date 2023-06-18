@@ -1,5 +1,5 @@
 # SnakeGameProject
-I coded a Snake Game project using JavaScript and the HTML5 canvas element. The objective of the game is to control a snake that continuously moves across the screen and guide it to eat the circle item, represented by randomly appearing dots. As the snake consumes the food, it grows longer, increasing the challenge of maneuvering without colliding with its own body or the boundaries of the game area.
+I coded a Snake Game project using JavaScript and the HTML5 canvas element. The objective of the game is to control a snake that continuously moves across the screen and guide it to eat the food item, represented by randomly appearing red circle. As the snake consumes the food, it grows longer, increasing the challenge of maneuvering without colliding with its own body or the boundaries of the game area.
 
 The game utilizes the JavaScript programming language to handle the game logic, including the snake's movement, red circle generation, and collision detection. The HTML5 canvas element provides a drawing surface on which the game graphics are rendered, allowing for smooth animations and interactions.
 
