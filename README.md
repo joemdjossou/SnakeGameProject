@@ -6,3 +6,5 @@ The game utilizes the JavaScript programming language to handle the game logic, 
 With JavaScript's event-driven nature, the game responds to user input, such as keyboard arrow keys, to control the snake's direction. The canvas is updated continuously, creating an illusion of movement as the snake travels across the screen and the score increases with each food item consumed.
 
 The Snake Game project demonstrates the use of JavaScript and the canvas element to build an engaging and interactive gaming experience. It showcases fundamental game development concepts, including game loops, collision detection, and user input handling, making it an enjoyable and nostalgic gaming endeavor for players of all ages.
+
+---
